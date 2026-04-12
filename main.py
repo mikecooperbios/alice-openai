@@ -50,7 +50,7 @@ async def alice_webhook(request: Request):
         sessions[session_id] = []
 
     if not utterance:
-        reply_text = "Привет! Я слушаю тебя. Спроси что-нибудь."
+        reply_text = "Привет! Я Chat GPT, я слушаю."
     else:
         sessions[session_id].append({"role": "user", "content": utterance})
 
