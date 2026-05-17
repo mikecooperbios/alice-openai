@@ -9,7 +9,8 @@
 set -euo pipefail
 
 DEPLOY_DIR="$HOME/chatgpt-alice"
-REPO_URL="https://github.com/mikecooperbios/alice-openai.git"
+# Uses SSH alias "github-alice" from ~/.ssh/config (IdentityFile ~/.ssh/alice_deploy)
+REPO_URL="git@github-alice:mikecooperbios/alice-openai.git"
 BRANCH="main"
 
 echo "==> Setting up $DEPLOY_DIR"
