@@ -57,7 +57,7 @@ async def alice_webhook(request: Request):
         try:
             messages = [{"role": "system", "content": SYSTEM_PROMPT}] + sessions[session_id]
             response = client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5.4",
                 max_tokens=500,
                 messages=messages,
             )
