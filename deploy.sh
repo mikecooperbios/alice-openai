@@ -10,7 +10,7 @@ set -euo pipefail
 
 DEPLOY_DIR="$HOME/chatgpt-alice"
 REPO_URL="https://github.com/mikecooperbios/alice-openai.git"
-BRANCH="claude/deploy-chatgpt-yandex-skill-Vgje5"
+BRANCH="main"
 
 echo "==> Setting up $DEPLOY_DIR"
 if [ ! -d "$DEPLOY_DIR/.git" ]; then
