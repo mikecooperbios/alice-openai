@@ -33,7 +33,7 @@ async def health():
     return {"status": "ok"}
 
 
-@app.post("/alice")
+@app.post("/gpt")
 async def alice_webhook(request: Request):
     body = await request.json()
 
